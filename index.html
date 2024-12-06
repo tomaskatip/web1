@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYMBOOK</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html{
+            background-color: black;
+        }
+
+        header{
+            width: 100%;
+            padding: 2rem;
+            background-color: black;
+            color: white;
+            position: fixed;
+            top: 0;
+            z-index: 100;
+        }
+
+        h1{
+            float: left;
+        }
+
+        ul{
+            font-size: 1rem;
+            padding: 1rem;
+        }
+
+        .carousel-item {
+            max-width: 100%;
+            height: auto;
+        }
+        a{
+            margin-right: 4rem;
+            
+        }
+
+        .bienvenida{
+            background-color: #ffdb4d;
+            color: black;
+            text-align: center;
+            padding-bottom: 5rem;
+        }
+
+        .bienvenida article{
+            max-width: 760px;
+            margin: auto;
+        }
+
+        .bienv{
+            padding-top: 5rem;
+            padding-bottom: 3rem;   
+        }
+
+        p{
+            padding-left: 1rem;
+            padding-right: 1rem;
+            font-size: 1rem;
+        }
+
+        section{
+        background-color: #000000;
+        color:#ffcc00 ;
+        text-align: center;
+        padding: 5rem;
+        }
+
+        .paso1{
+            margin-bottom: 2rem;
+
+            
+        }
+
+        .paso2{
+            margin-bottom: 2rem;
+        }
+
+
+        .como{
+            color: white;
+        }
+
+        .info{
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 1rem ;
+            border-radius: 20px;
+            margin-top: 5rem;
+            max-width: 760px;
+            margin-inline: auto;
+            margin-top: 2rem;
+        }
+
+        .crear{
+            background-color: #ffdb4d;
+        }
+
+        .table{
+            max-width: 500px;
+            margin: auto;
+        }
+
+        #tabla-dias {
+            border: none;
+          }
+          
+          #tabla-dias th,
+          #tabla-dias td {
+            background-color: #ffffff00;
+            border: none;
+          }
+          
+
+        .agregar{
+            padding-top: 2rem;
+            text-align: center;
+            margin: 0;
+        }
+
+
+
+        .ejerciciosEjemplos{
+            background-color: #000000;
+            padding-bottom: 5rem;
+        }
+
+        .tituloejemplo{
+            text-align: center;
+            color: white;
+            padding: 5rem;
+        }
+
+        form{
+            max-width: 400px;
+        }
+        .logo{
+            width: 100px;
+            height: 100px;
+            float: left;
+            
+        }
+
+        .nosotros{
+            text-align: center;
+            padding: 2rem;
+            background-color: #ffdb4d;
+        }
+
+        footer{
+            background-color: #ffdb4d;
+        }
+
+        .informacion{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 2rem;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div>
+      <img class="logo d-none d-lg-block " src="imagenes/logo.png" alt="logo">
+    </div>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">GYMBOOK</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#uso">¿COMO USAR?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#agregardia">AGREGAR DIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ejercicios">EJERCICIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#nosotros" >NOSOTROS</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  
+  <div id="carouselExampleSlidesOnly" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagenes/bannerMax.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+    
+
+  <div class="bienvenida">
+    <article>
+      <h2 class="bienv">¡Bienvenidos a GYMBOOK!</h2>
+    <p>Tú block de notas del gimnasio, organizate y lleva un registro de los dias que asististe al gimnasio y los ejercicios que hiciste.</p>
+    <p> Cada paso que das, cada esfuerzo que inviertes, te acerca más a tus metas. Aquí no solo se trata de levantar pesas, sino de levantar tu confianza, tu fuerza y tu determinación. Recuerda, el progreso es una maratón, no una carrera. </p>
+    <p>¡Estás en el camino correcto, y cada registro aquí es una victoria más hacia tu éxito!</p> 
+    </div>
+  </article>
+  </div>
+
+  <section>
+
+      <h2 id="uso" class="como">¿Como se usa?</h2>
+
+    <div class="info d-md-flex">
+
+      <div class="paso1" >
+        <div class="card-body">
+          <h5 class="card-title">PASO 1</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Creacion de dia</h6>
+          <p class="card-text p-2">Dirigirse a la seccion de agregar dias para iniciar el proceso.</p>
+        </div>
+      </div>
+
+      <div class="paso2" >
+        <div class="card-body">
+          <h5 class="card-title">PASO 2</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Carga de datos</h6>
+          <p class="card-text p-2">Ingresar los datos solicitados en cada caja de texto.</p>
+        </div>
+      </div>
+
+      <div class="paso3" >
+        <div class="card-body ">
+          <h5 class="card-title ">PASO 3</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Dia creado</h6>
+          <p class="card-text p-2">Darle a "Cargar dia" para crear el dia que asististe.</p>
+        </div>
+      </div>
+
+    </div>
+ 
+  </section>
+
+  <div id="agregardia" class="crear">
+    <h2 class="agregar">Agregar Días</h2>
+    <div class="d-md-flex py-5">
+        <div>
+          <form id="formulario" class="p-3 mx-auto ">
+            <h4 class="text-muted text-center text-md-start">Complete con el día que asistió al gimnasio</h4>
+
+            <p id="validacion" class="text-danger fw-bold m-0 p-0"></p>
+            
+            <div class="my-4">
+                <input id="dia" class="form-control" type="text" placeholder="Ingrese el día">
+                <p id="validacion-dia" class="text-danger m-0 p-0"></p>  
+            </div>
+            
+            <div class="my-4">
+                <input id="grupo" class="form-control my-4" type="text" placeholder="Ingrese grupos musculares">
+                <p id="validacion-grupo" class="text-danger m-0 p-0"></p>  
+            </div>
+        
+            <button class="btn btn-primary mt-2 mx-auto" type="submit">Agregar día</button>
+          </form>
+          <button id="eliminar-todo" class="btn btn-danger">Eliminar Todos los Días</button>  
+        </div>
+
+
+        <table id="tabla-dias" class="table table-striped mt-4">
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>Día</th>
+                    <th>Grupos Musculares</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+
+
+<div id="ejercicios" class="ejerciciosEjemplos">
+
+    <h2 class="tituloejemplo">Ejercicios para hacer en tu rutina</h2>
+    
+    <div class="d-flex flex-wrap gap-4 justify-content-center mx-4">
+      <div class="card" style="width: 18rem;">
+        <img src="imagenes/pechoGimnasio.png" class="card-img-top" alt="pecho">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">PECHO</h5>
+          <p class="card-text p-0">Algunos ejercicios de pecho que puedes realizar son: Press plano, Press inclinado, Apertura en polea, etc</p>
+        </div>
+      </div>
+  
+      <div class="card" style="width: 18rem;">
+        <img src="imagenes/espalda.png" class="card-img-top" alt="esplada">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">ESPALDA</h5>
+          <p class="card-text p-0">Algunos ejercicios de espalda que puedes realizar son: Remo en polea, Jalon al pecho, Remo en hammer, etc</p>
+        </div>
+      </div>
+  
+      <div class="card" style="width: 18rem;">
+        <img src="imagenes/biceps.png" class="card-img-top" alt="biceps">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">BICEPS</h5>
+          <p class="card-text p-0">Algunos ejercicios de biceps que puedes realizar son: Curl de biceps inclinado, Biceps martillo, Curl predicador, etc</p>
+        </div>
+      </div>
+  
+      <div class="card" style="width: 18rem;">
+        <img src="imagenes/triceps.png" class="card-img-top" alt="triceps">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">TRICEPS</h5>
+          <p class="card-text p-0">Algunos ejercicios de triceps que puedes realizar son: Extensión en polea, Tricep Copa, Fondos, etc</p>
+        </div>
+      </div>
+      
+      <div class="card" style="width: 18rem;">
+        <img src="imagenes/cuadriceps.png" class="card-img-top" alt="cuadriceps">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">CUADRICEPS</h5>
+          <p class="card-text p-0">Algunos ejercicios de cuadriceps que puedes realizar son: Extensión en sillon, Sentadilla, Búlgara, etc</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  <footer id="nosotros">
+    <h2 class="nosotros">Nosotros</h2>
+    <div class="informacion">
+      <button  type="button" class="btn btn-dark " data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Informacion
+      </button>
+      
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Datos del integrante</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p> <strong>Carrera:</strong> Diseño multimedial</p>
+              <p> <strong>Materia:</strong> Diseño y Programación Web 1 </p>
+              <p> <strong>Turno:</strong> Mañana</p>
+              <p> <strong>Comisión:</strong> DMM3AP</p>
+              <p> <strong>Año:</strong> 2024</p>
+              <p> <strong>Apellido y Nombre:</strong> Katip, Tomas </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    const formulario = document.querySelector("#formulario");
+      const tablaDias = document.querySelector("#tabla-dias tbody");
+      const validacion = document.querySelector("#validacion");
+      const validacionDia = document.querySelector("#validacion-dia");
+      const validacionGrupo = document.querySelector("#validacion-grupo");
+      const eliminarTodoBtn = document.querySelector("#eliminar-todo");
+      const mostrarTodosBtn = document.querySelector("#mostrar-todos");
+
+
+      let contador = 0;
+
+
+      window.onload = function() {
+          cargarDatos();
+      };
+
+      
+      function mostrar() {
+          document.getElementById("salida").innerHTML = "";
+          for (let i = 0; i < localStorage.length; i++) {
+              let clave = localStorage.key(i);
+              let valor = localStorage.getItem(clave);
+
+              const p = document.createElement("p");
+              p.textContent = clave + ": " + valor;
+              document.getElementById("salida").appendChild(p);
+          }
+      }
+
+      function cargarDatos() {
+          const diasGuardados = localStorage.getItem("dias");
+          if (diasGuardados) {
+              const diasArray = diasGuardados.split(";");
+              diasArray.forEach((dato, index) => {
+                  if (dato) {
+                      const [dia, grupo] = dato.split(",");
+                      contador++;
+                      const nuevaFila = document.createElement("tr");
+                      nuevaFila.innerHTML = `
+                          <td>${contador}</td>
+                          <td>${dia}</td>
+                          <td>${grupo}</td>
+                      `;
+                      tablaDias.appendChild(nuevaFila);
+                  }
+              });
+          }
+      }
+
+
+
+      function guardarDatos(dia, grupo) {
+          let diasGuardados = localStorage.getItem("dias");
+          if (!diasGuardados) {
+              diasGuardados = "";
+          }
+
+          diasGuardados += `${dia},${grupo};`;
+
+          localStorage.setItem("dias", diasGuardados);
+      }
+
+      formulario.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const dia = document.querySelector("#dia").value.trim();
+          const grupo = document.querySelector("#grupo").value.trim();
+          
+
+          validacion.textContent = "";
+          validacionDia.textContent = "";
+          validacionGrupo.textContent = "";
+
+          let camposCompletos = true;
+
+          if (dia != "lunes" && dia != "martes" && dia != "miercoles" && dia != "miércoles" && dia != "jueves" && dia != "viernes" && dia != "sabado" && dia != "sábado" && dia != "domingo" ) {
+              validacionDia.textContent = "Por favor, complete este campo correctamente";
+              camposCompletos = false;
+          } 
+          
+
+          if (grupo != "pecho" && grupo != "espalda" && grupo != "bicep" && grupo != "tricep" && grupo != "cuadricep") {
+              validacionGrupo.textContent = "Por favor, complete este campo correctamente";
+              camposCompletos = false;
+          }
+
+          if (camposCompletos) {
+              contador++;
+
+              const nuevaFila = document.createElement("tr");
+              nuevaFila.innerHTML = `
+                  <td>${contador}</td>
+                  <td>${dia}</td>
+                  <td>${grupo}</td>
+              `;
+              tablaDias.appendChild(nuevaFila);
+
+              guardarDatos(dia, grupo);
+
+              formulario.reset();
+          } else {
+              validacion.textContent = "Por favor, complete ambos campos correctamente.";
+          }
+      });
+
+      eliminarTodoBtn.addEventListener("click", function () {
+          localStorage.clear();
+          tablaDias.innerHTML = "";
+          mostrar();
+      });
+
+      mostrarTodosBtn.addEventListener("click", function () {
+          mostrar();
+      });
+  </script>
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+  </script>  
+  
+</body>
+</html>
